@@ -11,7 +11,7 @@ $(document).ready(function(){
 	function listEmployee(){
 		$.ajax({
 			type  : 'ajax',
-			url   : 'emp/show',
+			url   : 'show',
 			async : false,
 			dataType : 'json',
 			success : function(data){
@@ -44,7 +44,7 @@ $(document).ready(function(){
 		var empAddress = $('#address').val();
 		$.ajax({
 			type : "POST",
-			url  : "emp/save",
+			url  : "save",
 			dataType : "JSON",
 			data : {name:empName, age:empAge, designation:empDesignation, skills:empSkills, address:empAddress},
 			success: function(data){
@@ -77,7 +77,7 @@ $(document).ready(function(){
 		var empAddress = $('#empAddress').val();			
 		$.ajax({
 			type : "POST",
-			url  : "emp/update",
+			url  : "update",
 			dataType : "JSON",
 			data : {id:empId, name:empName, age:empAge, designation:empDesignation, skills:empSkills, address:empAddress},
 			success: function(data){

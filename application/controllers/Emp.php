@@ -4,7 +4,7 @@ class Emp extends CI_Controller{
 		parent::__construct();
         // echo ('1');
 		$this->load->model('EmpModel');
-        // $this->load->library('session');
+        // $this->load->library('session');	
         $this->load->helper('url');
 
 	}
